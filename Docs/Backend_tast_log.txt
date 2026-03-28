@@ -1,0 +1,53 @@
+============================================================
+ASSIGNMENT: Backend Developer Intern - API Logs
+CANDIDATE: Hifzur Rahman
+DATE: 2026-03-28
+SYSTEM: Ubuntu 24.04 LTS | Go 1.22+ | MongoDB 7.0
+============================================================
+
+
+
+
+[SERVER STARTUP]
+
+
+go run main.go
+
+
+[GIN-debug] POST   /api/v1/auth/register     --> ecommerce-backend/Controller.Register (3 handlers)
+[GIN-debug] POST   /api/v1/auth/login        --> ecommerce-backend/Controller.Login (3 handlers)
+[GIN-debug] GET    /api/v1/products/         --> ecommerce-backend/Controller.GetProducts (4 handlers)
+[GIN-debug] POST   /api/v1/products/         --> ecommerce-backend/Controller.CreateProduct (5 handlers)
+2026/03/28 19:58:50 Server starting on port 8080
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2026/03/28 - 20:01:05 | 200 |    1.93s |             ::1 | POST     "/api/v1/auth/register"
+[GIN] 2026/03/28 - 20:02:23 | 200 |    1.86s |             ::1 | POST     "/api/v1/auth/login"
+[GIN] 2026/03/28 - 20:04:10 | 201 |  12.29ms |             ::1 | POST     "/api/v1/products/"
+[GIN] 2026/03/28 - 20:06:01 | 200 |    1.84s |             ::1 | POST     "/api/v1/auth/login"
+[GIN] 2026/03/28 - 20:07:41 | 401 | 563.604µs |             ::1 | POST     "/api/v1/products/"
+[GIN] 2026/03/28 - 20:07:52 | 201 | 755.68µs |             ::1 | POST     "/api/v1/products/"
+[GIN] 2026/03/28 - 20:08:25 | 400 | 103.671µs |             ::1 | POST     "/api/v1/products/"
+[GIN] 2026/03/28 - 20:08:37 | 200 | 855.332µs |             ::1 | GET      "/api/v1/products/"
+[GIN] 2026/03/28 - 20:12:59 | 200 |    1.84s |             ::1 | POST     "/api/v1/auth/register"
+
+
+
+
+
+
+
+
+
+
+
+/backend
+├── controllers/     # Logic for Auth and Products
+├── database/        # DB connection logic
+├── middleware/      # JWT and RBAC checks
+├── models/          # Data schemas (User, Product)
+├── routes/          # API Route definitions
+├── utils/           # JWT generation, Password hashing
+├── main.go          # Entry point
+└── .env             # Environment variables
