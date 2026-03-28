@@ -1,177 +1,42 @@
-{
-	"info": {
-		"_postman_id": "f3d892f8-780a-446f-ac26-5dd088f14180",
-		"name": "Ecommerce-API-Task",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "51265066",
-		"_collection_link": "https://rahmankhan372003-5636891.postman.co/workspace/MyWorkspace~eba3c6ce-f985-491b-87af-f03cd53e6a8c/collection/51265066-f3d892f8-780a-446f-ac26-5dd088f14180?action=share&source=collection_link&creator=51265066"
-	},
-	"item": [
-		{
-			"name": "Register",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"name\": \"Admin User\",\n  \"email\": \"admin@test.com\",\n  \"password\": \"password123\",\n  \"role\": \"admin\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/v1/auth/register",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"auth",
-						"register"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Login",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"email\": \"admin@test.com\",\n  \"password\": \"password123\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/v1/auth/login",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"auth",
-						"login"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetProduct",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQHRlc3QuY29tIiwiUm9sZSI6ImFkbWluIiwiZXhwIjoxNzc0Nzk0NzQzfQ.ecVMT60ico4O7e7dXdDrDhpJakIBC8MrTLcM6wf6O_A",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/products/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"products",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "CreateProduct",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQHRlc3QuY29tIiwiUm9sZSI6ImFkbWluIiwiZXhwIjoxNzc0Nzk0NzQzfQ.ecVMT60ico4O7e7dXdDrDhpJakIBC8MrTLcM6wf6O_A",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"name\": \"MacBook 2\",\n  \"price\": 1999.99,\n  \"description\": \"Powerful laptop for developers\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/v1/products/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"products",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "UserRegister",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"name\": \"Regular Customer\",\n  \"email\": \"user@test.com\",\n  \"password\": \"password123\",\n  \"role\": \"user\" \n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/v1/auth/register",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"auth",
-						"register"
-					]
-				}
-			},
-			"response": []
-		}
-	]
-}
+# 🚀 Scalable Ecommerce REST API (Golang)
+
+This project is a high-performance, secure backend system built for the **Backend Developer Intern Assignment**. It features a modular architecture, JWT-based authentication with Role-Based Access Control (RBAC), and a scalable MongoDB integration.
+
+---
+
+## 🛠️ Tech Stack
+* **Language:** Go (Golang 1.22+)
+* **Framework:** Gin Gonic (HTTP Web Framework)
+* **Database:** MongoDB (NoSQL)
+* **Security:** JWT (JSON Web Tokens), Bcrypt (Password Hashing)
+* **Validation:** Go-Playground Validator
+* **Tools:** Godotenv, Postman
+
+---
+
+## ✨ Core Features
+* **Authentication:** User registration and login with secure password hashing.
+* **Authorization (RBAC):** Middleware-level restriction for `Admin` vs. `User` roles.
+* **CRUD Operations:** Full product management (Create, Read, Update, Delete).
+* **Security:** * CORS Middleware for frontend integration.
+    * Input sanitization and structural validation.
+    * Protected routes requiring valid Bearer Tokens.
+* **API Versioning:** Structured under `/api/v1` for future-proofing and scalability.
+
+---
+
+## 📂 Project Structure
+```text
+/backend
+├── Controller/      # Request handling logic (Auth & Products)
+├── Middleware/      # JWT Authentication & RBAC (Admin-only checks)
+├── Models/          # MongoDB Schemas & Data Structures
+├── Database/        # DB Connection & Collection Initialization
+├── Utils/           # Helper functions (JWT generation, Hashing)
+├── docs/            # Postman Collection & API documentation
+├── main.go          # Entry point & Route definitions
+└── .env             # Environment configuration
+
+
+
+
