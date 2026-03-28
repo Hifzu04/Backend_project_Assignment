@@ -17,7 +17,7 @@ The application is split into a high-performance Golang backend and a supportive
 ![UI Preview](./Docs/ui-preview.png)
 
 ### Postman Collection Preview
-![Postman Preview](./Docs/postman_preview.png)
+![Postman Preview](./Docs/postman-preview.png)
 
 
 
