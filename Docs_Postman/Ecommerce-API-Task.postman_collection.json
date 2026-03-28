@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "f3d892f8-780a-446f-ac26-5dd088f14180",
+		"name": "Ecommerce-API-Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51265066",
+		"_collection_link": "https://rahmankhan372003-5636891.postman.co/workspace/MyWorkspace~eba3c6ce-f985-491b-87af-f03cd53e6a8c/collection/51265066-f3d892f8-780a-446f-ac26-5dd088f14180?action=share&source=collection_link&creator=51265066"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduct",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UserRegister",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
