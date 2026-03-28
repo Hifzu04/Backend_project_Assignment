@@ -5,10 +5,10 @@ This is the frontend component of the **Backend Developer Intern Assignment**. B
 ## 🖼️ UI Preview & API Verification
 > **Note:** The screenshot below demonstrates the functional dashboard alongside the browser **Inspect** console. This proves successful API communication, JWT handling in the Network tab, and role-based rendering.
 
-![UI and Inspect Page](./docs/ui-preview.png)
+![UI and Inspect Page](./ui-preview.png)
 
 
----
+-----
 
 ## ✨ Key Features
 * **Secure Authentication:** Dedicated flows for User Registration and Login.
